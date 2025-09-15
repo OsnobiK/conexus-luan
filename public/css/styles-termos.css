@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+ 
+body {
+    font-size: larger;
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #40E0D0, #8f7af6);
+}
+ 
+.moldura-termos {
+
+  padding: 20px;               /* espaço interno */
+  margin: 30px auto;           /* distância em cima e embaixo + centralizar */
+  max-width: 700px;            /* largura máxima da caixa */
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9a9;  /* cor de fundo leve */
+  border-radius: 10px;         /* cantos arredondados */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* sombra suave */
+}
+ 
+.moldura-termos h1 {
+  text-align: center;
+  color: #333;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #8F7AF6, #59DDA0);
+  color: #333333d2;
+  line-height: 1.6;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.719);
+  color: #333333e1;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  border-radius: 0px;
+  margin-bottom: 30px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.719);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333333d7;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+label[for="laudo"] {
+  margin-bottom: 10px;
+}
+
+select#laudo {
+  margin-bottom: 30px;
+}
+
+input,
+select,
+textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+button {
+  background-color: #0bb39c;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: poppins, sans-serif;
+  gap: 10px;
+}
+
+button:hover {
+  background-color: #59dda0;
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #8F7AF6, #59DDA0);
+}
+
+h1 {
+    font-size: 2rem;
+    color: black;
+    font-family: Poppins, sans-serif;
+}
+.container {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.form-row label {
+    font-weight: bold;
+}
+
+.form-row input, .form-row textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    grid-column: span 4;
+    height: 100px;
+}
+
+.pdf-button {
+    align-self: center;
+    padding: 15px 30px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.pdf-button:hover {
+    background-color: #357ab7;
+}
+
+footer {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+}
+
+footer .brain-icon {
+    width: 250px;
+    height: auto;
+}
+
+.brain-icon {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 200px;
+    height: auto;
+    z-index: 10;
+}
+
+.branco {
+    background: rgba(255, 255, 255, 0.719);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    align-self: center;
+    margin: 20px auto;  
+}

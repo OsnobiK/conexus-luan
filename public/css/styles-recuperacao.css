@@ -1,0 +1,174 @@
+/* --- Configurações Gerais e de Fundo --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #313131;
+    background: linear-gradient(90deg, #40E0D0, #816fda);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+ 
+/* --- Container Principal --- */
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+ 
+.form-container {
+    background-color: rgba(255, 255, 255, 0.692);
+    padding: 40px;
+    border-radius: 16px;
+ 
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+ 
+/* --- Logo e Títulos --- */
+.logo {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+ 
+.logo-o {
+    color: #59dda0; /* Cor verde para o "o" */
+}
+ 
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+ 
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+ 
+/* --- Estilo dos Formulários --- */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+ 
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+ 
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff; /* Cor de fundo dos inputs */
+    color: #333; /* Cor da fonte dentro do input */
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.input-group input:focus {
+    outline: 2px solid #59dda0;
+}
+ 
+.input-group input::placeholder {
+    color: #333; /* Cor do texto placeholder */
+}
+ 
+/* --- Grupo de Checkbox (Termos de Serviço) --- */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 0.85rem;
+}
+ 
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: #59dda0;
+}
+ 
+.checkbox-group a {
+    color: #59dda0;
+    text-decoration: none;
+    font-weight: 600;
+}
+ 
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+ 
+/* --- Botão de Cadastro --- */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #59dda0;
+    color: #12141d;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.submit-btn:hover {
+    background-color: #4ac78b;
+    transform: translateY(-2px);
+}
+ 
+/* --- Link de Login --- */
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    font-size: 0.95rem;
+}
+ 
+.login-link a {
+    color: #59dda0;
+    text-decoration: none;
+    font-weight: 600;
+}
+ 
+.login-link a:hover {
+    text-decoration: underline;
+}
+ 
+a.forgot-password {
+    color: #59dda0; /* Cor igual ao texto geral */
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+ 
+a.forgot-password:hover {
+    color: #59dda0;
+    text-decoration: underline;
+}
+ 
+/* --- Responsividade --- */
+@media (max-width: 500px) {
+    .form-container {
+        padding: 30px;
+    }
+ 
+    .logo {
+        font-size: 2.5rem;
+    }
+}
