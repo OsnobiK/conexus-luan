@@ -22,5 +22,4 @@ class Sala extends Model
         'laudo_obrigatorio',
     ];
 
-    protected $table = 'laravel_pi';
 }
