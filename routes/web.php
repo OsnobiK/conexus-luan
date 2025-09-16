@@ -8,6 +8,7 @@ use App\Http\Controllers\MedicoController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SalaController;
 use App\Http\Controllers\LaudoPendenteController;
+use App\Http\Controllers\EsperaController;
 
 
 /*
@@ -22,7 +23,7 @@ Route::get('/', function () {
 })->name('home');
 
 // Rotas de Cadastro de Usuário
-Route::get('/cadastro', [CadastroController::class, 'create'])->name('cadastro.create');
+Route::get('/cadastro', [CadastroController::class, 'showRegistrationForm'])->name('cadastro.create');
 Route::post('/cadastro', [CadastroController::class, 'store'])->name('cadastro.store');
 
 // Rotas de Cadastro de Médico
@@ -64,7 +65,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/perfil/editar', [ProfileController::class, 'update'])->name('perfil.update');
 
     // --- GRUPO DE ROTAS PARA SALAS ---
-    Route::prefix('salas')->name('salas.')->group(function () {
+        Route::prefix('salas')->name('salas.')->group(function () {
+        Route::get('/espera-de-salas', [EsperaController::class, 'salasAgendadas'])->name('espera')->middleware('auth');
         Route::get('/', [SalaController::class, 'index'])->name('index');
         Route::post('/{id}/agendar', [SalaController::class, 'agendar'])->name('agendar');
         Route::get('/minhas-agendadas', [SalaController::class, 'salasAgendadas'])->name('agendadas');

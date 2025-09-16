@@ -45,6 +45,8 @@ class Laudo extends Model
 {
     use HasFactory;
 
+    protected $table = 'laudos';
+
     protected $fillable = [
         'nome',
         'data_nascimento',

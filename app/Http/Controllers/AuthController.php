@@ -1,9 +1,10 @@
 <?php
  
 namespace App\Http\Controllers;
-use App\Models\Usuario; // Certifique-se de importar o modelo User
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth; // Corrigido de Login para Auth
+use App\Models\User; // Certifique-se de importar o modelo User
+use App\Models\Usuario; // Se você estiver usando um modelo Usuario
  
 class AuthController extends Controller
 {

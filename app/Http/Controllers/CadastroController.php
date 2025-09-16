@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Exception; // Importa a classe Exception para o bloco catch
+use App\Models\Usuario; // Certifique-se de importar o modelo User
 
 class CadastroController extends Controller
 {

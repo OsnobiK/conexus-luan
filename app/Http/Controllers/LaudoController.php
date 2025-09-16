@@ -10,7 +10,7 @@ class LaudoController extends Controller
 {
     public function create()
     {
-        return view('cadastralaudo');
+        return view('cadastrolaudo');
     }
  
     public function store(Request $request)
@@ -51,6 +51,6 @@ class LaudoController extends Controller
             // 'sala_id' => $validated['sala_id'], // descomente se necessário
         ]);
  
-        return redirect()->route('cadastrarlaudo')->with('success', 'Laudo cadastrado com sucesso!');
+        return redirect()->route('cadastrolaudo')->with('success', 'Laudo cadastrado com sucesso!');
     }
 }

@@ -12,7 +12,7 @@ return new class extends Migration {
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('sala_id');
             $table->string('caminho_arquivo');
-            $table->enum('status', ['pendente', 'aprovado', 'rejeitado'])->default('pendente');
+            $table->enum('condicao', ['pendente', 'aprovado', 'rejeitado'])->default('pendente');
             $table->timestamps();
 
             // Chaves estrangeiras (opcional, mas recomendável)
